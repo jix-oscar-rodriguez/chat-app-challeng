@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #9d3ffb;
+}
+.main-grid{
+    width: 70%;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.chat-grid {
+  border: 12px solid white;
+  width: 310px;
+  /* margin: 10rem auto; */
+  border-radius: 4rem;
+  overflow: hidden;
+  background-color: #f4f0f9;
+}
+
+/* <!-- upper part⬇️  parte superior ⬇ --> */
+.chat-grid .cheader {
+  background: rgb(146, 62, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(146, 62, 253, 1) 12%,
+    rgba(222, 69, 253, 1) 67%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 84px;
+  border-radius: 1rem;
+}
+.chat-grid .cheader img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.chat-grid .cheader span {
+  background-color: white;
+  width: 15.7rem;
+  height: 20px;
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin: 0 auto 1.3rem auto;
+}
+.chat-grid .cheader .c-header-content {
+  display: flex;
+  gap: 2rem;
+  padding: 0 3rem;
+}
+
+/* <!-- chat container⬇️ contenedor del chat --> */
+.chat-content {
+  padding: 1.5rem 1rem;
+}
+.hedaer-info {
+  color: white;
+}
+.hedaer-info p {
+  font-weight: 100;
+}
+
+.chat-avatar p {
+  color: #885baa;
+  background-color: #ece4f3;
+  width: 60%;
+  padding: 1rem 0.7rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 1px;
+}
+.pictures-grid {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.chat-pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+.pictures-grid img {
+  width: 5rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+.chat-p {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.chat-p p {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem 2rem 0.5rem 2rem;
+  color: #979699;
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.price-container .price {
+  display: flex;
+  background: rgb(146, 62, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(146, 62, 253, 1) 12%,
+    rgba(222, 69, 253, 1) 67%
+  );
+  width: 75%;
+  color: white;
+  padding: 1rem 2rem 1rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0.4rem;
+  justify-content: space-between;
+}
+.left-p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.left-p span {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.price h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.chat-footer {
+    margin: 2rem;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-footer span{
+width: 3rem;
+background-color: black;
+border-radius: 50%;
+height: 3rem;
+}
+
+.contaner-txt{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ color: white;
+}
+.contaner-txt h1{
+font-size: 4rem;
+font-weight: 600;
+margin-bottom: 3rem;
+}
+.contaner-txt p{
+    font-size: 1.8rem;
+    width: 70%;
+}
+@media (min-width: 1044px){
+    .chat-grid {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 489px){
+  .main-grid{
+    grid-template-columns: 1fr;
+  }
+  .contaner-txt{
+    margin-top: 10rem;
+  }
+  .contaner-txt h1{
+    text-align: center;
+  }
+  .contaner-txt p{
+    width: 100%;
+    text-align: center;
+  }
+}
